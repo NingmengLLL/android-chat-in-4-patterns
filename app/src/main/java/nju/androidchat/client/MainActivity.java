@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Handler;
+import android.os.StrictMode;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -25,9 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
     EditText inputIp;
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
         try {
             Utils.props.load(getResources().getAssets().open("config.properties"));
             String chatActivityClassName = Utils.props.getProperty(Utils.CHAT_ACTIVITY_KEY);

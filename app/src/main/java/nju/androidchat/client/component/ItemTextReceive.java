@@ -1,10 +1,6 @@
 package nju.androidchat.client.component;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.res.TypedArray;
-import android.util.AttributeSet;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -30,7 +26,7 @@ public class ItemTextReceive extends LinearLayout {
         super(context);
         this.context = context;
         inflate(context, R.layout.item_text_receive, this);
-        this.textView = findViewById(R.id.chat_item_content_text);
+        this.textView = findViewById(R.id.chat_item_content_image);
         this.messageId = messageId;
         setText(text);
     }

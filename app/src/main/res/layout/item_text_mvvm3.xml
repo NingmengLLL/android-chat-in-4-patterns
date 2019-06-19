@@ -50,7 +50,7 @@
                 app:layout_type="@{messageBean.direction}">
 
                 <TextView
-                    android:id="@+id/chat_item_content_text"
+                    android:id="@+id/chat_item_content_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@{messageBean.send?@drawable/message_text_send:@drawable/message_text_receive}"

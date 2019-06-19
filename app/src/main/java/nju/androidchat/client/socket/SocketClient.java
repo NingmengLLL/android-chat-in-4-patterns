@@ -39,7 +39,7 @@ public class SocketClient implements Closeable, Runnable {
     private @Setter
     MessageListener messageListener;
 
-    public final static String SERVER_ADDRESS = "10.0.2.2";
+    public final static String SERVER_ADDRESS = "10.0.3.2";
 
     // socket的输入和输出流
     // 在开始操作之前初始化这两个field

@@ -2,8 +2,6 @@ package nju.androidchat.client.component;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.res.TypedArray;
-import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,7 +26,7 @@ public class ItemTextSend extends LinearLayout implements View.OnLongClickListen
         super(context);
         this.context = context;
         inflate(context, R.layout.item_text_send, this);
-        this.textView = findViewById(R.id.chat_item_content_text);
+        this.textView = findViewById(R.id.chat_item_content_image);
         this.messageId = messageId;
         this.onRecallMessageRequested = onRecallMessageRequested;
 
